@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.navbar-dark {
+    background-color: rgba(153, 102, 51, 0.7);
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    margin-top: 100px;
+    font-family: MyFirstFont;
+    background-color: #e6cbb3;
+}
+
+a {
+  cursor: pointer;
+}
+
+.movie-main-container {
+  height: 100vh;
+}
+
+.movie-main-row {
+    height: 100vh;
+}

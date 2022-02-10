@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{>head}}
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body id="body">
+        <!-- Spinner here -->
+        <div class="spinner-wrapper">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        {{>toast}}
+        {{>loginForm}}
+        {{>foot}}
+        <script src="js/app.js"></script>
+    </body>
+</html>

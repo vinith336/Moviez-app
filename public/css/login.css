@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-dark {
+  background-color: rgba(153, 102, 51, 0.7);
+}
+
+/* @font-face {
+  font-family: myFirstFont;
+  src: url('../fonts/Pacifico.ttf')
+} */
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: MyFirstFont;
+    background-color: #e6cbb3;
+}
+
+.login-form-container, .signup-form-container {
+  height: 100;
+}
+
+.login-form-row, .signup-form-row {
+  height: 100vh;
+}
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999999;
+}
+
+a {
+  cursor: pointer;
+}
+
+.spinner-border {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.row-content {
+    padding: 50px 0px;
+    margin: 0px auto;
+    min-height: 400px;
+}
+
+.row-heading {
+  border-bottom: 1px solid grey;
+}
+
+.title-main {
+  font-weight: bolder;
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+.col-benefit {
+  margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #bf8040;
+    color: white;
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.row-copyright {
+  margin-top: 50px;
+}

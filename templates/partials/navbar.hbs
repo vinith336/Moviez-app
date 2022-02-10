@@ -1,0 +1,14 @@
+ <nav class="navbar navbar-dark navbar-expand-md fixed-top"> <!-- for responsive collapsing -->
+    <div class="container"> <!-- navbar main content -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">MovieZ</a> <!-- navbar logo -->
+        <div class="collapse navbar-collapse" id="navbar"> <!-- grouping hiddden navabr content when breakpoint occurs -->
+            <ul class="navbar-nav mr-auto"><!-- lightweight navbar with dropdown -->
+                <li class="nav-item home-link active"><a class="nav-link" href="/home">Home</a></li>
+                <li class="nav-item" onclick="logout();"><a class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

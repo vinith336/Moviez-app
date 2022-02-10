@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Pacifico.ttf')
+  }
+  
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: myFirstFont;
+    background-color: #e6cbb3;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 999999;
+}
+  
+.spinner-border {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+.navbar-dark {
+    background-color: rgba(153, 102, 51, 0.7);
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+    border-bottom: 1px solid grey;
+}
+
+.raisin {
+    margin-bottom: 20px;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #bf8040;
+    color: white;
+    width: 100%;
+}
+
+.row-copyright {
+  margin-top: 50px;
+}
+
+.row-heading {
+    border-bottom: 1px solid grey;
+}
+
+.title-main-product {
+    font-weight: bolder;
+    font-size: 90px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+}
+
+#searchmodal {
+    position: fixed;
+    top: 40%;
+}
+
+@media (max-width: 576px) {
+    .title-main-product {
+        font-weight: bolder;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    #searchmodal {
+        position: fixed;
+        top: 15%;
+    }
+}
+
+#searchterm {
+    width: 75%;
+    height: 50px;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width: 576px) {
+    #searchterm {
+        width: 100%;
+    }
+}
+
+#searchterm:focus {
+    width: 100%;
+}
+
+.searcher {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.search-results {
+    padding: 5px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.modal-body {
+    background-color: #996633;
+  }
+
+.search-row:hover {
+    background-color: #dfbf9f;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+.modal-header 
+{
+  background-color: #996633;
+}

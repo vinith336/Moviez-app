@@ -1,0 +1,39 @@
+<div class="col-12 col-md-8">
+    <form action="/movies" id="getMoviesForm">
+        <div class="form-group row justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="title-main">Search Movies</h1>
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" id="movie" name="movie" placeholder="Movie Name" style="height: 50px;">
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-dark">Search</button>
+            </div>
+        </div>
+    </form>
+        {{#if movies}}
+        {{#each movies}}
+            {{>item}}
+            <form action="/movies" method="post" id="postMovieForm">
+                <input type="hidden" name="title" id="title" value="{{this.title}}">
+                <input type="hidden" name="plot" id="plot" value="{{this.plot}}">
+                <input type="hidden" name="year" id="year" value="{{this.year}}">
+                <input type="hidden" name="rating" id="rating" value="{{this.rating}}">
+                <div class="form-group row mt-2">
+                    <div class="col-6">
+                        <button class="btn btn-primary" type="submit">Add to list</button>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="public" value="public" id="public">
+                    <label class="form-check-label" for="flexCheckDefault">Public?</label>
+                </div> 
+            </form>
+        {{/each}}
+    {{/if}}
+</div>

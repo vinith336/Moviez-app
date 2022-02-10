@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{>head}}
+        <link rel="stylesheet" href="/css/movies.css">
+    </head>
+    <body id="body">
+        <!-- Spinner here -->
+        <div class="spinner-wrapper">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        {{>toast}}
+        {{>navbar}}
+        <div class="container-fluid movie-main-container">
+            <div class="row" class="movie-main-row">
+                {{>searchForm}}
+                {{>list}}
+            </div>
+        </div>
+        {{>foot}}
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+            const userId = "{{userId}}"
+            const link = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/movies/share/${userId}`
+            $('#linkDiv').append(`<a href=${link} target="_blank">Share</a>`)
+        </script>
+    </body>
+</html>

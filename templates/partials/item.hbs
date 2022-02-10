@@ -1,0 +1,15 @@
+<div class="row row-content mt-2" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-12 col-md-8" data-aos="zoom-in">
+        <h3 data-aos="fade-up" data-aos-duration="1500">{{this.title}}</h3>
+        <h5 class="text-success"><strong>{{this.year}}</strong></h5>
+        <a class="text-primary d-block d-md-none" data-toggle="collapse" data-target="#readMore-{{@index}}" role="button" id="readMore-{{@index}}" style="cursor: pointer;">Read about {{this.title}}</a>
+        <p class="collapse" id="readMore-{{@index}}">{{this.plot}}</p>
+        <p class="d-none d-md-block">{{this.plot}}</p>
+        <div class="productreviews d-block">
+            <span class="text-secondary">IMDB Review: {{this.rating}}</span>
+        </div>
+        {{#if this.public}}
+            <span class="text-info">Public</span>
+        {{/if}}
+    </div>
+</div>
